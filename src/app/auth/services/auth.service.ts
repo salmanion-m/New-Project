@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
-import {catchError, Observable, shareReplay, tap, throwError} from "rxjs";
-import {AuthenticatedResponse, Login, Register} from "../models";
+import {catchError, shareReplay, tap, throwError} from "rxjs";
+import { Login, Register} from "../models";
 
 
 
@@ -23,20 +23,10 @@ export class AuthService {
     return localStorage.getItem('token')
   }
 
-  //register
-  // register(register: Register): Observable<any> {
-  //   return this.http.post<any>(`${this._apiUrl}/register`, register)
-  // }
-
   registers(register: Register) {
     return this.http.post(`${this._apiUrl}/register`, register)
       shareReplay();
   }
-
-  // Login(log: Login){
-  //   return this.http.post(`${this._apiUrl}/login`,log)
-  // }
-
 
   Login(log: Login){
     return this.http.post(`${this._apiUrl}/login`,log).pipe(
