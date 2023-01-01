@@ -1,0 +1,20 @@
+<!--<div class="container">-->
+<!--  <mat-form-field appearance="outline" class="example-form-field">-->
+<!--    <mat-label>فیلتر</mat-label>-->
+<!--    <input  matInput [formControl]="insCode" placeholder="فیلتر" search (keyup)="onApplyFilter($event)">-->
+<!--  </mat-form-field>-->
+<!--</div>-->
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="applyFilter()">
+    <mat-form-field>
+      <input matInput autofocus formControlName="insCode">
+    </mat-form-field>
+
+<!--    <div class="example-button-row">-->
+      <button type="submit" mat-fab extended color="primary">
+        اعمال
+      </button>
+<!--    </div>-->
+  </form>
+
+</div>

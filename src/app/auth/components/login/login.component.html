@@ -1,0 +1,42 @@
+<div class="container">
+  <form >
+    <div class="login-container">
+      <div class="login-content">
+        <mat-toolbar class="login-toolbar" color="primary">ورود کاربر </mat-toolbar>
+
+        <mat-card >
+          <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
+
+            <mat-form-field appearance="outline" class="width">
+              <mat-label>نام کاربری</mat-label>
+              <mat-icon matPrefix>person_outline</mat-icon>
+              <input autofocus matInput  type="text" formControlName="userName">
+            </mat-form-field>
+
+            <mat-form-field class="width" appearance="outline">
+              <mat-label>رمز ورود</mat-label>
+              <mat-icon matPrefix>lock_outline</mat-icon>
+              <input matInput [type]="hide ? 'password' : 'text'" autofocus="false" formControlName="password">
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+
+
+            <div class="button">
+            <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">ورود</button>
+            </div>
+
+            <br><br>
+            <div class="rg-span">
+            <span>اگر حساب کاربری ندارید <a routerLink="/register">اینجا کلیک کنید</a> </span>
+            </div>
+
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </form>
+</div>
+
+

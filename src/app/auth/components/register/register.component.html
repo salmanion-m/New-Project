@@ -1,0 +1,40 @@
+<div class="container">
+
+  <div class="reg-container">
+    <div class="reg-content">
+      <mat-toolbar class="reg-toolbar" color="primary">ثبت حساب کاربری</mat-toolbar>
+
+      <mat-card >
+
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+
+          <mat-form-field appearance="outline" class="width">
+            <mat-label>نام کاربری</mat-label>
+            <mat-icon matPrefix>person_outline</mat-icon>
+            <input matInput autofocus type="text" formControlName="userName" >
+<!--            <mat-error *ngIf="checkValidation('username')">-->
+<!--              {{ fieldRequired }}-->
+<!--            </mat-error>-->
+          </mat-form-field>
+
+          <mat-form-field class="width" appearance="outline">
+            <mat-label>رمز ورود</mat-label>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            <input matInput [type]="hide ? 'password' : 'text'" autofocus="false" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <div class="button">
+            <button type="submit" mat-raised-button color="primary" [disabled]="registerForm.invalid">ورود</button>
+          </div>
+
+        </form>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
+
+

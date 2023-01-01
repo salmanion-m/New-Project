@@ -1,0 +1,25 @@
+.container{
+  padding: 3rem;
+}
+
+table{
+  width: 100%;
+}
+
+.p{
+  padding-left: 34rem;
+  padding-right: 38rem;
+}
+
+.mat-mdc-paginator, mat-mdc-text-field-wrapper{
+  direction: ltr;
+  ::ng-deep .mat-mdc-text-field-wrapper {
+    direction: rtl;
+  }
+  ::ng-deep .mat-mdc-paginator-range-actions{
+    direction: rtl;
+  }
+  ::ng-deep .mat-mdc-paginator-range-label{
+    direction: ltr;
+  }
+}

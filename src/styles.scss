@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: yekan-font;
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/font/yekan-font/Yekan.eot');
+  src: url('./assets/font/yekan-font/Yekan.eot?#iefix') format('embedded-opentype'),
+  url('./assets/font/yekan-font/Yekan.woff') format('woff'),
+  url('./assets/font/yekan-font/Yekan.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Tanha;
+  font-weight: normal;
+  src: url('./assets/font/tanha-font-v0.9/Tanha.eot');
+  src: url('./assets/font/tanha-font-v0.9/Tanha.eot?#iefix') format('embedded-opentype'),
+  url('./assets/font/tanha-font-v0.9/Tanha.woff') format('woff'),
+  url('./assets/font/tanha-font-v0.9/Tanha.ttf') format('truetype');
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mdc-data-table__header-cell{
+  font-family: Tanha
+}
+
+.mdc-data-table__cell {
+  font-family: yekan-font;
+}
+
+
+
+
+
+
+
