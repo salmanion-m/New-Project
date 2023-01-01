@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormControlName, FormGroup, FormGroupDirective, Validators} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {AuthService} from "../../services";
-import {Login} from "../../models";
-import {first, Subscription} from "rxjs";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-login',
@@ -39,29 +38,9 @@ export class LoginComponent implements OnInit {
       return
     }
     this.authService.Login(this.loginForm.value).subscribe((response: any)=> {
-      // console.log('1',response);
-      // const token = response.token;
-      // localStorage.setItem('token', response.token)
-      // console.log('2',response.token)
       this.router.navigate(['/letter'])
     })
   }
-
-  // onSubmit( ){
-  //   if(this.loginForm.invalid){
-  //     return
-  //   }
-  //   this.authService.Login(this.loginForm.value).subscribe((res)=> {
-  //     if (res) {
-  //       localStorage.setItem('token', res.token)
-  //       this.router.navigate(['/letter'])
-  //     }
-  //   })
-  // }
-
-
-
-
 
 
 }
