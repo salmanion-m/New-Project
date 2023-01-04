@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {IndustryTableComponent} from "./components";
+import {ContainerComponent, IndustryTableComponent} from "./components";
 
 const routes: Routes = [
-  {path: 'industry' , component: IndustryTableComponent},
+  {path: '' ,component: ContainerComponent,
+    children:[
+      {path: 'industry-table' ,component: IndustryTableComponent}
+    ]},
 ];
 
 @NgModule({

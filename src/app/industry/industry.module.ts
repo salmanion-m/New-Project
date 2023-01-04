@@ -6,10 +6,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
 import {MatFormFieldModule} from "@angular/material/form-field";
-
-
-
-
+import {ShareModule} from "../share/share.module";
 
 @NgModule({
   declarations: [
@@ -23,6 +20,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatTableModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    ShareModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA  ]
 })
