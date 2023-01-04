@@ -1,0 +1,62 @@
+<app-filter-daily-price  (onApplyFilter)="onApplyFilter($event)">
+</app-filter-daily-price>
+
+<div class="container">
+
+  <table mat-table [dataSource]="dataSource" mat-sort class="mat-elevation-z8">
+    <!-- index Column -->
+    <ng-container matColumnDef="index" >
+      <th mat-header-cell  *matHeaderCellDef  >ردیف</th>
+      <td mat-cell  *matCellDef="let data;let i = index;">{{i + 1}}</td>
+    </ng-container>
+
+    <!-- insCode Column -->
+    <ng-container matColumnDef="insCode" >
+      <th mat-header-cell *matHeaderCellDef  >  کد نماد </th>
+      <td mat-cell *matCellDef="let data" >{{data.insCode}}</td>
+    </ng-container>
+
+    <!-- deven Column -->
+    <ng-container matColumnDef="deven" >
+      <th mat-header-cell *matHeaderCellDef>deven</th>
+      <td mat-cell *matCellDef="let data">{{data.deven}}</td>
+    </ng-container>
+
+    <!-- pclosing Column -->
+    <ng-container matColumnDef="pclosing">
+      <th mat-header-cell *matHeaderCellDef>pclosing</th>
+      <td mat-cell *matCellDef="let data">{{data.pclosing}}</td>
+    </ng-container>
+
+    <!--    &lt;!&ndash; instituteType Column &ndash;&gt;-->
+    <!--    <ng-container matColumnDef="instituteType">-->
+    <!--      <th mat-header-cell *matHeaderCellDef>نوع موسسه</th>-->
+    <!--      <td mat-cell *matCellDef="let data">{{data.i.instituteType}}</td>-->
+    <!--    </ng-container>-->
+
+    <!--    &lt;!&ndash; instituteKind Column &ndash;&gt;-->
+    <!--    <ng-container matColumnDef="instituteKind" >-->
+    <!--      <th mat-header-cell *matHeaderCellDef>گروه موسسه</th>-->
+    <!--      <td mat-cell *matCellDef="let data">{{data.i.instituteKind}}</td>-->
+    <!--    </ng-container>-->
+
+    <!--    &lt;!&ndash; seoregisterNo Column &ndash;&gt;-->
+    <!--    <ng-container matColumnDef="seoregisterNo">-->
+    <!--      <th mat-header-cell *matHeaderCellDef>شماره ثبت</th>-->
+    <!--      <td mat-cell *matCellDef="let data">{{data.i.seoregisterNo}}</td>-->
+    <!--    </ng-container>-->
+
+    <!--    &lt;!&ndash; ceo Column &ndash;&gt;-->
+    <!--    <ng-container matColumnDef="ceo">-->
+    <!--      <th mat-header-cell *matHeaderCellDef>مدیر عامل</th>-->
+    <!--      <td mat-cell *matCellDef="let data">{{data.i.ceo}}</td>-->
+    <!--    </ng-container>-->
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumn"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumn;let i = index"></tr>
+  </table>
+
+  <mat-paginator class="mat-mdc-paginator p"  #paginator [length]="list.length" [pageSize]="10" [pageSizeOptions]="[5,10,50,100]" [showFirstLastButtons]="true">
+  </mat-paginator>
+</div>
