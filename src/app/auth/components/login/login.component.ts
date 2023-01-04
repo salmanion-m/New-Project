@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {AuthService} from "../../services";
-import {Subscription} from "rxjs";
+import { Subscription} from "rxjs";
 
 @Component({
   selector: 'app-login',
@@ -38,9 +38,8 @@ export class LoginComponent implements OnInit {
       return
     }
     this.authService.Login(this.loginForm.value).subscribe((response: any)=> {
-      this.router.navigate(['/letter'])
+      this.router.navigate(['/dashbord/link'])
     })
   }
-
 
 }

@@ -16,6 +16,8 @@ import {DailyModule} from "./daily/daily.module";
 import {AuthModule} from "./auth/auth.module";
 import {AuthService} from "./auth";
 import {AuthInterceptor} from "./share";
+import {ShareModule} from "./share/share.module";
+import {DashbordModule} from "./dashbord/dashbord.module";
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import {AuthInterceptor} from "./share";
     DailyModule,
     MatSortModule,
     AuthModule,
+    ShareModule,
+    DashbordModule
   ],
   schemas: [ NO_ERRORS_SCHEMA  ],
   providers: [AuthService,

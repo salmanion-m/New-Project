@@ -5,7 +5,7 @@ import {
   HttpEvent,
   HttpInterceptor
 } from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { Observable} from 'rxjs';
 import {AuthService} from "../../auth";
 
 @Injectable()
@@ -25,6 +25,5 @@ export class AuthInterceptor implements HttpInterceptor {
     })
     return next.handle(request);
   }
-
 
 }
