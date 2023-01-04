@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="card card-custom bg-gray-100 card-stretch gutter-b">
+    <!-- Header -->
+    <div class="card-header border-0 bg-danger py-5">
+      <h3 class="card-title font-weight-bolder text-white mat">لینک جداول</h3>
+    </div>
+    <!-- Body -->
+    <div class="card-body p-0 position-relative overflow-hidden">
+      <!--begin::Chart-->
+      <div class="card-rounded-bottom bg-danger"
+           [style.height]="'99px'">
+      </div>
+      <!--end::Chart-->
+
+      <!--begin::Stats-->
+      <div class="card-spacer mt-n25 ">
+        <!--begin::Row-->
+        <div class="row m-0">
+          <div class="col bg-light-warning px-6 py-8 rounded-xl mr-7 mb-7 mat-typography">
+              <span
+                class="svg-icon svg-icon-3x svg-icon-warning d-block my-2"
+              ></span>
+            <a routerLink="/day/daily-table" class="text-warning font-weight-bold font-size-h6">
+              Daily
+            </a>
+          </div>
+          <div class="col bg-light-primary px-6 py-8 rounded-xl mb-7 mat-typography">
+              <span
+                class="svg-icon svg-icon-3x svg-icon-primary d-block my-2"
+              ></span>
+            <a routerLink="/fund/fund-table" class="text-primary font-weight-bold font-size-h6 mt-2">
+              Fund
+            </a>
+          </div>
+        </div>
+        <!--end::Row-->
+        <!--begin::Row-->
+        <div class="row m-0">
+          <div class="col bg-light-danger px-6 py-8 rounded-xl mr-7 mb-7 mat-typography">
+              <span
+                class="svg-icon svg-icon-3x svg-icon-danger d-block my-2"
+              ></span>
+            <a routerLink="/letter/letter-table" class="text-danger font-weight-bold font-size-h6 mt-2">
+              Letter-Type
+            </a>
+          </div>
+          <div class="col bg-light-success px-6 py-8 rounded-xl mb-7 mat-typography">
+              <span
+                class="svg-icon svg-icon-3x svg-icon-success d-block my-2"
+              ></span>
+            <a routerLink="/instrument/inst-table" class="text-success font-weight-bold font-size-h6 mt-2 ">
+              Instrument
+            </a>
+          </div>
+        </div>
+        <!--end::Row-->
+        <!--begin::Row-->
+        <div class="row m-0">
+          <div class="col bg-light-green  px-6 py-8 rounded-xl mr-7 mat-typography">
+              <span
+                class="svg-icon svg-icon-3x svg-icon-danger d-block my-2"
+              ></span>
+            <a routerLink="/industry/industry-table" class="text-green  font-weight-bold font-size-h6 mt-2">
+              Industry
+            </a>
+          </div>
+<!--                      <div class="col bg-light-indigo px-6 py-8 rounded-xl mat-typography">-->
+<!--                        <span-->
+<!--                          class="svg-icon svg-icon-3x svg-icon-success d-block my-2"-->
+<!--                        ></span>-->
+<!--                        <a routerLink="/day/daily-table" class="text-indigo font-weight-bold font-size-h6 mt-2 ">-->
+<!--                          Bug Reports 12-->
+<!--                        </a>-->
+<!--                      </div>-->
+        </div>
+        <!--end::Row-->
+      </div>
+      <!--end::Stats-->
+    </div>
+  </div>
+</div>
