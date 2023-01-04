@@ -3,11 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import {ContainerComponent, FundTableComponent} from "./components";
 
 const routes: Routes = [
-  // {path: '' , component: ContainerComponent ,
-  // children:[
-  //   {path: 'fund-table',component: FundTableComponent}
-  // ]},
-  {path: 'fund-table',component: FundTableComponent}
+  {path: '' , component: ContainerComponent ,
+  children:[
+    {path: 'fund-table',component: FundTableComponent}
+  ]},
 ];
 
 @NgModule({

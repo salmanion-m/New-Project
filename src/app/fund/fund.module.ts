@@ -9,6 +9,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TableComponent } from './components/table/table.component';
+import {ShareModule} from "../share/share.module";
 
 
 @NgModule({
@@ -17,14 +18,15 @@ import { TableComponent } from './components/table/table.component';
     FundTableComponent,
     TableComponent
   ],
-  imports: [
-    CommonModule,
-    FundRoutingModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatFormFieldModule,
-  ],
+    imports: [
+        CommonModule,
+        FundRoutingModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatFormFieldModule,
+        ShareModule,
+    ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 
 })
