@@ -7,6 +7,7 @@ import { LetterTypeTableComponent } from './components/letter-type-table/letter-
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import {MatPaginator, MatPaginatorModule} from "@angular/material/paginator";
+import {ShareModule} from "../share/share.module";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {MatPaginator, MatPaginatorModule} from "@angular/material/paginator";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    ShareModule,
   ]
 })
 export class LetterTypeModule { }
