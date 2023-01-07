@@ -12,12 +12,12 @@ import {MatSortModule} from "@angular/material/sort";
 import {IndustryModule} from "./industry/industry.module";
 import {LetterTypeModule} from "./letter-type/letter-type.module";
 import {InstrumentModule} from "./instrument/instrument.module";
-import {DailyModule} from "./daily/daily.module";
 import {AuthModule} from "./auth/auth.module";
 import {AuthService} from "./auth";
 import {AuthInterceptor} from "./share";
 import {ShareModule} from "./share/share.module";
 import {DashbordModule} from "./dashbord/dashbord.module";
+import {DailyPriceModule} from "./daily-price/daily-price.module";
 
 @NgModule({
   declarations: [
@@ -35,11 +35,11 @@ import {DashbordModule} from "./dashbord/dashbord.module";
     IndustryModule,
     LetterTypeModule,
     InstrumentModule,
-    DailyModule,
     MatSortModule,
     AuthModule,
     ShareModule,
-    DashbordModule
+    DashbordModule,
+    DailyPriceModule,
   ],
   schemas: [ NO_ERRORS_SCHEMA  ],
   providers: [AuthService,
