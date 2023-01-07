@@ -20,6 +20,7 @@ export class LetterTypeService {
     return this.http.get<LetterType[]>(`${this._apiUrl}`)
   }
 
+  // // sending token
   // getLetterType(): Observable<LetterType[]> {
   //   const header = new HttpHeaders({
   //     'const-Type': 'application/json',
