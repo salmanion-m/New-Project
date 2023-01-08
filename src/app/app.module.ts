@@ -18,6 +18,7 @@ import {AuthInterceptor} from "./share";
 import {ShareModule} from "./share/share.module";
 import {DashbordModule} from "./dashbord/dashbord.module";
 import {DailyPriceModule} from "./daily-price/daily-price.module";
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {DailyPriceModule} from "./daily-price/daily-price.module";
     ShareModule,
     DashbordModule,
     DailyPriceModule,
+    HighchartsChartModule
   ],
   schemas: [ NO_ERRORS_SCHEMA  ],
   providers: [AuthService,

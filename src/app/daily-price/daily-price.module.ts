@@ -14,14 +14,18 @@ import {
 } from "./components/daily-price-table/filter-daily-price/filter-daily-price.component";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
-
+import { ChartDailyPriceComponent } from './components/chart-daily-price/chart-daily-price.component';
+import {ChartModule} from "angular-highcharts";
+import { DailyPriceListComponent } from './pages/daily-price-list/daily-price-list.component';
 
 
 @NgModule({
   declarations: [
     ContainerComponent,
     DailyPriceTableComponent,
-    FilterDailyPriceComponent
+    FilterDailyPriceComponent,
+    ChartDailyPriceComponent,
+    DailyPriceListComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +37,7 @@ import {MatButtonModule} from "@angular/material/button";
     MatTableModule,
     MatInputModule,
     MatButtonModule,
+    ChartModule,
   ]
 })
 export class DailyPriceModule { }
