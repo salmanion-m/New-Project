@@ -1,5 +1,4 @@
 export class Fund {
-  i: {
     id: number;
     cfundId: number;
     instituteTypeId: number;
@@ -18,6 +17,5 @@ export class Fund {
     regTime: number;
     type: null;
     navurl: null;
-  }
 
 }

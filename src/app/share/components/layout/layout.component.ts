@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent {
+
   asideSelfDisplay: true;
   asideMenuStatic: true;
   asideCSSClasses: string;
