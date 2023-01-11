@@ -1,5 +1,4 @@
 export class InstrumentList {
-  // i:{
     deven: number;
     insCode: number;
     instrumentId: string;
@@ -33,5 +32,4 @@ export class InstrumentList {
     qtitMinSaiOmProd: number;
     qtitMaxSaiOmProd: number;
     valid: number;
-  // }
 }

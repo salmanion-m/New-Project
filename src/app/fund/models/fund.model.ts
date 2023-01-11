@@ -17,5 +17,4 @@ export class Fund {
     regTime: number;
     type: null;
     navurl: null;
-
 }
