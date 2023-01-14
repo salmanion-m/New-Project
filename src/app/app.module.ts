@@ -19,6 +19,7 @@ import {ShareModule} from "./share/share.module";
 import {DashbordModule} from "./dashbord/dashbord.module";
 import {DailyPriceModule} from "./daily-price/daily-price.module";
 import { HighchartsChartModule } from 'highcharts-angular';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
   ],
   schemas: [ NO_ERRORS_SCHEMA  ],
   providers: [AuthService,
-    {provide: HTTP_INTERCEPTORS,useClass: AuthInterceptor,multi: true},],
+    {provide: HTTP_INTERCEPTORS,useClass: AuthInterceptor,multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

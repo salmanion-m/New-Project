@@ -6,9 +6,18 @@
 <!--</div>-->
 <div class="container">
   <form [formGroup]="form" (ngSubmit)="applyFilter()">
-    <mat-form-field>
-      <input matInput autofocus formControlName="insCode">
+    <mat-form-field appearance="fill">
+      <input matInput autofocus formControlName="insCode" placeholder="insCode">
     </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <input matInput autofocus formControlName="FromDate" placeholder="FromDate">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <input matInput autofocus formControlName="ToDate" placeholder="ToDate">
+    </mat-form-field>
+    <br>
 
     <!--    <div class="example-button-row">-->
     <button type="submit" mat-fab extended color="primary">

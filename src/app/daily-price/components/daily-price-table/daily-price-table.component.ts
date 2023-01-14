@@ -16,7 +16,7 @@ export class DailyPriceTableComponent implements OnInit {
   filter: FilterDailyPrices = new FilterDailyPrices();
   list: DailyPriceList[]=[];
   dataSource = new MatTableDataSource<DailyPriceList>;
-  displayedColumn: string[]=['index','insCode','deven','pclosing'];
+  displayedColumn: string[]=['index','insCode','deven','pclosing','shamsidate'];
 
   @ViewChild(MatPaginator) paginator : MatPaginator;
 

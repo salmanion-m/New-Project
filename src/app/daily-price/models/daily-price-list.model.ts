@@ -13,4 +13,6 @@ export class DailyPriceList {
   priceFirst: number ;
   regDate: number ;
   regTime: number ;
+  shamsidate: string;
+
 }
