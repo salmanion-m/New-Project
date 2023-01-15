@@ -16,7 +16,7 @@ export class IndustryService {
   }
 
   getIndustry(): Observable<IndustTable[]> {
-    return this.http.get < IndustTable[] >(`${this._apiUrl}`)
+    return this.http.get<IndustTable[]>(`${this._apiUrl}`)
   }
 
 
